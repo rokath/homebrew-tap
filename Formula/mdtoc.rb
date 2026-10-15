@@ -5,21 +5,21 @@
 class Mdtoc < Formula
   desc "Go-based Markdown Table of Contents manager with numbering and stable anchor links."
   homepage "https://github.com/rokath/mdtoc"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rokath/mdtoc/releases/download/v1.0.2/mdtoc_darwin_amd64.tar.gz"
-      sha256 "39efab14a30e68a52468eb9908c7c0186e929be510e94e05c2fb3f4a4815a204"
+      url "https://github.com/rokath/mdtoc/releases/download/v1.0.3/mdtoc_darwin_amd64.tar.gz"
+      sha256 "d134dd5e52f1cc06657451c479ac7862b683b8eb8a392226351bae1f667c79dd"
 
       define_method(:install) do
         bin.install "mdtoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rokath/mdtoc/releases/download/v1.0.2/mdtoc_darwin_arm64.tar.gz"
-      sha256 "231429f21e7f29f54173072b33aad802f57a7693adc0078ee8f93b0751843936"
+      url "https://github.com/rokath/mdtoc/releases/download/v1.0.3/mdtoc_darwin_arm64.tar.gz"
+      sha256 "81b2a658d08080eea185f5b5484866ad5f17a5adb5f5cbee5e411edd5b7648e9"
 
       define_method(:install) do
         bin.install "mdtoc"
@@ -29,22 +29,22 @@ class Mdtoc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rokath/mdtoc/releases/download/v1.0.2/mdtoc_linux_amd64.tar.gz"
-      sha256 "d7f3ad4b29c5beb912f66da4cfdfb9c6991e1518c6575189dc559c9e2bef09b7"
+      url "https://github.com/rokath/mdtoc/releases/download/v1.0.3/mdtoc_linux_amd64.tar.gz"
+      sha256 "eff296d578eae7cf7e0f041fea686591456a891638674c0a479bc9efdb53cf09"
       define_method(:install) do
         bin.install "mdtoc"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rokath/mdtoc/releases/download/v1.0.2/mdtoc_linux_arm6.tar.gz"
-      sha256 "50e9bf49991088278c4c83e886a17a66251577d1c1ac2fab162460e2568f747e"
+      url "https://github.com/rokath/mdtoc/releases/download/v1.0.3/mdtoc_linux_arm6.tar.gz"
+      sha256 "924aba9062f6742cb3fc0ccb019ee525c1110c50800632fc39f0077a6c1bf211"
       define_method(:install) do
         bin.install "mdtoc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rokath/mdtoc/releases/download/v1.0.2/mdtoc_linux_arm64.tar.gz"
-      sha256 "3fed5e53ffb9d51e08874c020f8245b67086c5b3157b9e16b65067924552668c"
+      url "https://github.com/rokath/mdtoc/releases/download/v1.0.3/mdtoc_linux_arm64.tar.gz"
+      sha256 "41684d8df157d54a169e8d491f42416f2c323ce925a321c15d281bd6f43e8860"
       define_method(:install) do
         bin.install "mdtoc"
       end
